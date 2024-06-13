@@ -10,8 +10,8 @@ We are now applying for the permission of releasing our data on PhysioNet. Sever
 
 ## Implementation of Baseline Experiment
 We show the implementation for LLama3-8B and GPT Azure.
-For [LLama3](https://github.com/meta-llama/llama3), we use the official code on GitHub. Refer to their settings to prepare the environments and download the pre-trained models.
-The 
+For [LLama3](https://github.com/meta-llama/llama3), we use the official code on GitHub. Refer to their settings to prepare the environments and download the pre-trained models. <br>
+The final output is save in a JSON file in a dictionary structure as: {o: [z, r, d] ...}. r mean the part of the clinical note where o is extracted. 
 
 #### Experiment with LLama3
 Using the following command for the calculation of annotated samples. Set --use_p as True for utilizing the premise in knowledge graph.

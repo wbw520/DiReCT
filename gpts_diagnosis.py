@@ -46,6 +46,7 @@ def cal_one_file(root_file, root_pred, use_p, api_key, azure_endpoint, api_versi
     # first inference for possible disease category
     notes = prepare_note(input_content)
     input_ = gen_disease_diagnose(notes, disease_options)
+    # narrowing down the disease category
     disease_cat = one_contact(input_, api_key, azure_endpoint, api_version, model)
 
     # Agree some mistakes. We find a few generation inconsistency e.g., Schemic Stroke (leaf node disease) other than
@@ -80,6 +81,7 @@ def cal_one_file(root_file, root_pred, use_p, api_key, azure_endpoint, api_versi
         notet_r = prepare_note_slit(input_content, r)
         input_r = gen_reasoning_initial(notet_r, disease_cat, p_initial)
         r_suspect = one_contact(input_r, api_key, azure_endpoint, api_version, model)
+        # revise some wrong generation that not following instruction
         r_suspect = delete_end(r_suspect)
         try:
             record_suspect.update({r: ast.literal_eval(r_suspect)})

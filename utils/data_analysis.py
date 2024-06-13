@@ -114,6 +114,8 @@ def prepare_note_slit(input_content, index):
 
 
 def transmit_to_observation(ob_suspected, disease):
+    # record: translate all observations and rationales into a dictionary. Using observation as key.
+    # all_observation: contains all extracted observation
     all_observation = []
     record = {}
     for key, value in ob_suspected.items():
@@ -130,6 +132,7 @@ def transmit_to_observation(ob_suspected, disease):
 
 
 def combine_premise(knowledge, choice, initial=False):
+    # load premise from knowledge graph for initial and iterative phases
     premise = """"""
     if initial:
         for i in range(len(choice)):

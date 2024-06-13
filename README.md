@@ -1,9 +1,10 @@
 # DiReCT: Diagnostic Reasoning for Clinical Notes via Large Language Models 
-This repository is the official implementation of DiReCT. It contains the codes for running the baseline method as well as automatic evaluation. Our dataset aims to assess the ability of large language model in aligning with human doctor in diagnostic reasoning.
+This repository is the official implementation of DiReCT. It contains the codes for running the baseline method as well as automatic evaluation. 
+Our dataset aims to assess the ability of large language model in aligning with human doctor in diagnostic reasoning for clinical notes.
 ![Diagnostic Procedure](imgs/imgs.png)
 
 ## Data Set
-We are now applying for the permission of releasing our data on PhysioNet. Several samples of annotated data are available in samples folder.
+We are now applying for the permission of releasing our data on PhysioNet. Several samples of annotated data (this samples are perturbed and revised by ourself to confirm not related to the original note) are available in samples folder.
 
 [Annotation and Tools](https://github.com/wbw520/DiReCT/tree/master/utils/data_annotation) <br>
 [Data Loading and Analysis](https://github.com/wbw520/DiReCT/tree/master/utils/data_loading_analysisi)
@@ -19,7 +20,7 @@ Using the following command for the calculation of annotated samples. Set --use_
 torchrun --nproc_per_node 1 llama3_diagnosis.py --ckpt_dir Meta-Llama-3-8B-Instruct/ --tokenizer_path Meta-Llama-3-8B-Instruct/tokenizer.model  --root samples --use_p False
 ```
 #### Experiment with GPT Azure
-Fill in you account for Azure GPT API
+Fill in your Azure GPT API
 ```
 from gpts_diagnosis import USE_GPT_API
 
@@ -30,4 +31,14 @@ USE_GPT_API(root="samples", use_p=False, api_key="Your key", azure_endpoint="You
 We use the LLama3-8B for this evaluation. Our prompts refer to utils/dataextraction.py <br>
 With functions: discriminate_similarity_observation() and  def discriminate_similarity_reason()
 #### Evaluation for Completeness and Faithfulness
+A evaluation folder "_eval" will be generated for all prediction. Each prediction has a evaluation results, show the matched observations and rationales.
+```
+torchrun --nproc_per_node 1 evaluation.py   --ckpt_dir Meta-Llama-3-8B-Instruct/     --tokenizer_path Meta-Llama-3-8B-Instruct/tokenizer.model  --root samples --pred_name predict_Meta-Llama-3-8B-Instruct
+```
 #### Results Statistics
+Run the following code to show the statistics of metrics for each sample.
+```
+from statistics import process
+
+process(root="samples", pred_name="predict_Meta-Llama-3-8B-Instruct")
+```

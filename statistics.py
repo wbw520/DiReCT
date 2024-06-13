@@ -22,6 +22,7 @@ def process(root, pred_name):
     for i in range(len(all_files_gt)):
         print(f"{i}/{len(all_files_gt)}")
         root_file = all_files_gt[i]
+        print(root_file)
         current_disease = root_file.split("/")[1]
         root_eval = root_file.replace("Finished", pred_name + "_eval")
 
@@ -38,64 +39,72 @@ def process(root, pred_name):
         record[current_disease]["faith_ob"].append(faith_ob)
         record[current_disease]["faith_all"].append(faith_all)
 
-    record_acc_cat_all = []
-    record_acc_diag_all = []
-    record_comp_pre_all = []
-    record_comp_re_all = []
-    record_comp_coverage_all = []
-    record_faith_ob_all = []
-    record_faith_all_all = []
+        print("acc_cat:", acc_cat)
+        print("acc_diag:", acc_diag)
+        print("comp_pre:", comp_pre)
+        print("comp_re:", comp_re)
+        print("comp_coverage:", comp_coverage)
+        print("faith_ob:", faith_ob)
+        print("faith_all:", faith_all)
 
-    for key, value in domain.items():
-        record_acc_cat = []
-        record_acc_diag = []
-        record_comp_pre = []
-        record_comp_re = []
-        record_comp_coverage = []
-        record_faith_ob = []
-        record_faith_all = []
-        for key2, value2 in record.items():
-            if key2 in value:
-                record_acc_cat.extend(value2["acc_cat"])
-                record_acc_diag.extend(value2["acc_diag"])
-                record_comp_pre.extend(value2["comp_pre"])
-                record_comp_re.extend(value2["comp_re"])
-                record_comp_coverage.extend(value2["comp_coverage"])
-                record_faith_ob.extend(value2["faith_ob"])
-                record_faith_all.extend(value2["faith_all"])
-
-        record_acc_cat_all.extend(record_acc_cat)
-        record_acc_diag_all.extend(record_acc_diag)
-        record_comp_pre_all.extend(record_comp_pre)
-        record_comp_re_all.extend(record_comp_re)
-        record_comp_coverage_all.extend(record_comp_coverage)
-        record_faith_ob_all.extend(record_faith_ob)
-        record_faith_all_all.extend(record_faith_all)
-
-        print("Domain:", key)
-        print("acc_cat")
-        print(np.array(record_acc_cat).mean())
-        print("acc_diag")
-        print(np.array(record_acc_diag).mean())
-        print("comp_pre")
-        print(np.array(record_comp_pre).mean(), np.array(record_comp_pre).std())
-        print("comp_re")
-        print(np.array(record_comp_re).mean(), np.array(record_comp_re).std())
-        print("comp_coverage")
-        print(np.array(record_comp_coverage).mean(), np.array(record_comp_coverage).std())
-        print("faith_ob")
-        print(np.array(record_faith_ob).mean(), np.array(record_faith_ob).std())
-        print("faith_all")
-        print(np.array(record_faith_all).mean(), np.array(record_faith_all).std())
-
-    print("overall results:")
-    print("acc_cat:", np.array(record_acc_cat_all).mean())
-    print("acc_diag:", np.array(record_acc_diag_all).mean())
-    print("comp_pre:", np.array(record_comp_pre_all).mean(), np.array(record_comp_pre_all).std())
-    print("comp_re:", np.array(record_comp_re_all).mean(), np.array(record_comp_re_all).std())
-    print("comp_coverage:", np.array(record_comp_coverage_all).mean(), np.array(record_comp_coverage_all).std())
-    print("faith_ob:", np.array(record_faith_ob_all).mean(), np.array(record_faith_ob_all).std())
-    print("faith_all:", np.array(record_faith_all_all).mean(), np.array(record_faith_all_all).std())
+    # record_acc_cat_all = []
+    # record_acc_diag_all = []
+    # record_comp_pre_all = []
+    # record_comp_re_all = []
+    # record_comp_coverage_all = []
+    # record_faith_ob_all = []
+    # record_faith_all_all = []
+    #
+    # for key, value in domain.items():
+    #     record_acc_cat = []
+    #     record_acc_diag = []
+    #     record_comp_pre = []
+    #     record_comp_re = []
+    #     record_comp_coverage = []
+    #     record_faith_ob = []
+    #     record_faith_all = []
+    #     for key2, value2 in record.items():
+    #         if key2 in value:
+    #             record_acc_cat.extend(value2["acc_cat"])
+    #             record_acc_diag.extend(value2["acc_diag"])
+    #             record_comp_pre.extend(value2["comp_pre"])
+    #             record_comp_re.extend(value2["comp_re"])
+    #             record_comp_coverage.extend(value2["comp_coverage"])
+    #             record_faith_ob.extend(value2["faith_ob"])
+    #             record_faith_all.extend(value2["faith_all"])
+    #
+    #     record_acc_cat_all.extend(record_acc_cat)
+    #     record_acc_diag_all.extend(record_acc_diag)
+    #     record_comp_pre_all.extend(record_comp_pre)
+    #     record_comp_re_all.extend(record_comp_re)
+    #     record_comp_coverage_all.extend(record_comp_coverage)
+    #     record_faith_ob_all.extend(record_faith_ob)
+    #     record_faith_all_all.extend(record_faith_all)
+    #
+    #     print("Domain:", key)
+    #     print("acc_cat")
+    #     print(np.array(record_acc_cat).mean())
+    #     print("acc_diag")
+    #     print(np.array(record_acc_diag).mean())
+    #     print("comp_pre")
+    #     print(np.array(record_comp_pre).mean(), np.array(record_comp_pre).std())
+    #     print("comp_re")
+    #     print(np.array(record_comp_re).mean(), np.array(record_comp_re).std())
+    #     print("comp_coverage")
+    #     print(np.array(record_comp_coverage).mean(), np.array(record_comp_coverage).std())
+    #     print("faith_ob")
+    #     print(np.array(record_faith_ob).mean(), np.array(record_faith_ob).std())
+    #     print("faith_all")
+    #     print(np.array(record_faith_all).mean(), np.array(record_faith_all).std())
+    #
+    # print("overall results:")
+    # print("acc_cat:", np.array(record_acc_cat_all).mean())
+    # print("acc_diag:", np.array(record_acc_diag_all).mean())
+    # print("comp_pre:", np.array(record_comp_pre_all).mean(), np.array(record_comp_pre_all).std())
+    # print("comp_re:", np.array(record_comp_re_all).mean(), np.array(record_comp_re_all).std())
+    # print("comp_coverage:", np.array(record_comp_coverage_all).mean(), np.array(record_comp_coverage_all).std())
+    # print("faith_ob:", np.array(record_faith_ob_all).mean(), np.array(record_faith_ob_all).std())
+    # print("faith_all:", np.array(record_faith_all_all).mean(), np.array(record_faith_all_all).std())
 
 
 def statistic_word_observation(root):
@@ -215,4 +224,4 @@ def cal_disease():
 
 
 # cal_disease()
-process()
+# process()

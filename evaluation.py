@@ -14,13 +14,13 @@ import json
 
 def main(
     root: str,
+    pred_name: str,
     ckpt_dir: str,
     tokenizer_path: str,
     temperature: float = 0,
     top_p: float = 1,
     max_seq_len: int = 8192,
     max_batch_size: int = 4,
-    use_p: bool = False,
     max_gen_len: Optional[int] = None,
 ):
     generator = Llama.build(
@@ -30,12 +30,6 @@ def main(
         max_batch_size=max_batch_size,
     )
 
-    if use_p:
-        suffix = "_premise"
-    else:
-        suffix = ""
-
-    pred_name = f"predict_{ckpt_dir[:-1]}" + suffix
     all_files_gt = get_all_file_paths(root)
     all_files_pred = get_all_file_paths(pred_name)
     all_files_pred_eval = get_all_file_paths(pred_name + "_eval")
@@ -48,6 +42,7 @@ def main(
         # skip processed file
         if root_eval in all_files_pred_eval:
             continue
+        # if a prediction is not successfully generated, we do not implement evaluation and treat it as 0 for all metric calculation
         if root_pred not in all_files_pred:
             continue
         try:
@@ -94,6 +89,7 @@ def deal_a_file(root_file, root_pred, root_eval, generator, max_gen_len, tempera
     record.update({"GT_observation": GT_observation})
     record.update({"predict_observation": predict_observation})
 
+    # find similar rationales
     for item in ob_record:
         re_gt = GT[GT_observation[item[0]]][0]
         disease_gt = GT[GT_observation[item[0]]][2]
@@ -134,5 +130,4 @@ def one_contact(generator, max_gen_len, temperature, top_p, in_):
 
 
 if __name__ == "__main__":
-    sys.argv = ['example_chat_completion.py', '--ckpt_dir=Meta-Llama-3-8B-Instruct', '--tokenizer_path=Meta-Llama-3-8B-Instruct/tokenizer.model']
     fire.Fire(main)

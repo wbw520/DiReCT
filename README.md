@@ -2,7 +2,7 @@
 This repository is the official implementation of DiReCT. It contains the codes for running the baseline method as well as automatic evaluation.
 
 ## Data Set
-We are now apply for the permission of release our data on PhysioNet. It will be coming soon. Several samples of annotated data are available in samples folder.
+We are now applying for the permission of releasing our data on PhysioNet. Several samples of annotated data are available in samples folder.
 
 ## Implementation of Baseline Experiment
 We show the implementation for LLama3-8B and GPT Azure.

@@ -1,5 +1,5 @@
 # DiReCT: Diagnostic Reasoning for Clinical Notes via Large Language Models 
-This repository is the official implementation of DiReCT. It contains the codes for running the baseline method as well as automatic evaluation. 
+This repository is the official implementation of DiReCT. It contains the codes for running the baseline method as well as automatic evaluation. Our dataset aims to assess the ability of large language model in aligning with human doctor in diagnostic reasoning.
 ![Diagnostic Procedure](imgs/imgs.png)
 
 ## Data Set

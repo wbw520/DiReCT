@@ -14,6 +14,15 @@ def get_name(root, mode_folder=True):
 
 
 def cal_a_json(root):
+    # This function is used to extract the annotated clinical note (saved in a tree structure). The output is:
+    # record_node: A dictionary for all nodes in our annotation. Each node is also saved as a dictionary where
+        # "content" record the content of the node.
+        # "type" show the annotation type, e.g., "Input" as observations, "Cause" as rationale, and "Intermedia" as diagnosis.
+        # "connection" gives the children nodes.
+        # "upper" gives the parent node.
+    # input_content: A dictionary saves original clinical note from "input1"-"Chief Complaint" to "input6"-"Pertinent Results"
+    # chain: A list structure saves the diagnostic procedure in order.
+
     chain = []
 
     def traverse(key_, content, index_, upper):
@@ -48,6 +57,7 @@ def cal_a_json(root):
 
 
 def deduction_assemble(record_node):
+    # Organize all nodes and return the all deductions as [o,z,d]
     GT = {}
     for key, value in record_node.items():
         if "Input" not in value['type']:
@@ -62,7 +72,8 @@ def deduction_assemble(record_node):
 
 
 def disease_category():
-    root = "/data/wangbowen/PycharmProject/llama3/Diagnosis_flowchart"
+    # return all disease category names and diagnostic knowledge graph for each disease category
+    root = "/diagnostic_kg"
     files = get_name(root, mode_folder=False)
     disease_cat_options = []
     flowchart = {}
@@ -77,6 +88,7 @@ def disease_category():
 
 
 def disease_category2():
+    # return all leaf nodes names
     disease_options, flowchart = disease_category()
     record = []
     for di in disease_options:
@@ -87,6 +99,7 @@ def disease_category2():
 
 
 def prepare_note(input_content):
+    # return the whole clinical note
     out = """"""
     for key, value in input_content.items():
         out += all_content[key] + ":\n" + value
@@ -94,6 +107,7 @@ def prepare_note(input_content):
 
 
 def prepare_note_slit(input_content, index):
+    # return one part of the clinical note
     out = """"""
     out += all_content[index] + "\n" + input_content[index]
     return out
@@ -133,7 +147,6 @@ def combine_premise(knowledge, choice, initial=False):
 
 def extract_keys(d, parent_key=''):
     keys = []
-    keys_leaf = []
     for k, v in d.items():
         full_key = f"{k}" if parent_key else k
         keys.append(full_key)
@@ -155,15 +168,14 @@ def get_non_dict_keys(data, parent_key=''):
 
 
 def check(text):
+    # maintain the list structure by giving "]"
     if text[-2] != "]" and text[-2] != "," and text[-2] != "[":
-        print("----------")
-        print(text[-2])
-        print("-----------")
         text += "]"
     return text
 
 
 def delete_end(r_adv):
+    # erase the wrong generation other than response
     ooo = r_adv.split("]")
     if len(ooo[-1]) > 0:
         out = r_adv.replace(ooo[-1], "")
@@ -173,6 +185,7 @@ def delete_end(r_adv):
 
 
 def match(pred, disease_list):
+    # discriminate if one generated name can match with a disease category
     preds = pred.split(" ")
     record = {}
     for disease in disease_list:
@@ -196,6 +209,7 @@ def match(pred, disease_list):
 
 
 def get_all_file_paths(directory):
+    # get all annotated data
     file_paths = []
     for root, _, files in os.walk(directory):
         for file in files:
@@ -204,19 +218,7 @@ def get_all_file_paths(directory):
 
 
 def capitalize_first_letter(text):
+    # for evaluation capitalize all first letter
     words = text.split()
     capitalized_words = [word[0].upper() + word[1:] if word else '' for word in words]
     return ' '.join(capitalized_words)
-
-# disease_options, flowchart = disease_category()
-# match("Acute Gastrointestinal Bleeding", disease_options)
-
-# disease_options, flowchart = disease_category()
-# disease_cat = "Stroke"
-# disease_list = extract_keys(flowchart[disease_cat]["diagnostic"])
-# print(disease_list)
-# current_disease = disease_list[0]
-# flowchart_position = flowchart[disease_cat]["diagnostic"]
-# knowledge = flowchart[disease_cat]["knowledge"]
-# p_initial = combine_premise(knowledge, disease_list, initial=True)
-# print(p_initial)

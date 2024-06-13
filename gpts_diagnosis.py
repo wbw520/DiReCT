@@ -1,14 +1,10 @@
-# Copyright (c) Meta Platforms, Inc. and affiliates.
-# This software may be used and distributed in accordance with the terms of the Llama 3 Community License Agreement.
-
-from typing import List
 from utils.data_extraction import gen_reasoning_initial, gen_disease_diagnose, gen_reasoning_advanced
 from utils.gpt_call import AskGPTAzure, AskChatGPT
 import ast
 import os
 import json
 from utils.data_analysis import all_content, cal_a_json, prepare_note, prepare_note_slit, transmit_to_observation
-from utils.data_analysis import disease_category, combine_premise, extract_keys, check, delete_end, match, get_all_file_paths
+from utils.data_analysis import disease_category, combine_premise, extract_keys, delete_end, match, get_all_file_paths
 
 
 disease_options, flowchart = disease_category()

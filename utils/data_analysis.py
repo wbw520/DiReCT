@@ -73,7 +73,7 @@ def deduction_assemble(record_node):
 
 def disease_category():
     # return all disease category names and diagnostic knowledge graph for each disease category
-    root = "/diagnostic_kg"
+    root = "diagnostic_kg"
     files = get_name(root, mode_folder=False)
     disease_cat_options = []
     flowchart = {}

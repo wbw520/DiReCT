@@ -13,12 +13,14 @@ import json
 
 
 def main(
+    root: str,
     ckpt_dir: str,
     tokenizer_path: str,
     temperature: float = 0,
-    top_p: float = 0.9,
+    top_p: float = 1,
     max_seq_len: int = 8192,
     max_batch_size: int = 4,
+    use_p: bool = False,
     max_gen_len: Optional[int] = None,
 ):
     generator = Llama.build(
@@ -28,16 +30,21 @@ def main(
         max_batch_size=max_batch_size,
     )
 
-    pred_name = "predict_llama3_8b_premise"
-    all_files_gt = get_all_file_paths("Finished")
+    if use_p:
+        suffix = "_premise"
+    else:
+        suffix = ""
+
+    pred_name = f"predict_{ckpt_dir[:-1]}" + suffix
+    all_files_gt = get_all_file_paths(root)
     all_files_pred = get_all_file_paths(pred_name)
     all_files_pred_eval = get_all_file_paths(pred_name + "_eval")
 
     for i in range(len(all_files_gt)):
         print(f"{i}/{len(all_files_gt)}")
         root_file = all_files_gt[i]
-        root_pred = root_file.replace("Finished", pred_name)
-        root_eval = root_file.replace("Finished", pred_name + "_eval")
+        root_pred = root_file.replace(root, pred_name)
+        root_eval = root_file.replace(root, pred_name + "_eval")
         # skip processed file
         if root_eval in all_files_pred_eval:
             continue

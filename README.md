@@ -4,7 +4,7 @@ Our dataset aims to assess the ability of large language model in aligning with 
 ![Diagnostic Procedure](imgs/imgs.png)
 
 ## Data Set
-We are now applying for the permission of releasing our data on PhysioNet. Several samples of annotated data (this samples are perturbed and revised by ourself to confirm not related to the original note) are available in samples folder.
+We are now applying for the permission of releasing our data on PhysioNet. Several samples of annotated data (these samples are perturbed and revised by ourself to confirm not related to the original note) are available in the "samples" folder.
 
 [Annotation and Tools](https://github.com/wbw520/DiReCT/tree/master/utils/data_annotation) <br>
 [Data Loading and Analysis](https://github.com/wbw520/DiReCT/tree/master/utils/data_loading_analysisi)
@@ -13,7 +13,7 @@ We are now applying for the permission of releasing our data on PhysioNet. Sever
 We show the implementation for LLama3-8B and GPT Azure.
 For [LLama3](https://github.com/meta-llama/llama3), we use the official code on GitHub. Refer to their settings to prepare the environments and download the pre-trained models. 
 The final output is save in a JSON file in a dictionary structure as: {o: [z, r, d] ...}. r means the part of the clinical note where o is extracted. 
-
+An prediction folder "predict_" will be generated.
 #### Experiment with LLama3
 Using the following command for the calculation of annotated samples. Set --use_p as True for utilizing the premise in knowledge graph.
 ```
@@ -31,7 +31,7 @@ USE_GPT_API(root="samples", use_p=False, api_key="Your key", azure_endpoint="You
 We use the LLama3-8B for this evaluation. Our prompts refer to utils/dataextraction.py <br>
 With functions: discriminate_similarity_observation() and  def discriminate_similarity_reason()
 #### Evaluation for Completeness and Faithfulness
-A evaluation folder "_eval" will be generated for all prediction. Each prediction has a evaluation results, show the matched observations and rationales.
+An evaluation folder "_eval" will be generated for all prediction. Each prediction has a evaluation results, show the matched observations and rationales.
 ```
 torchrun --nproc_per_node 1 evaluation.py   --ckpt_dir Meta-Llama-3-8B-Instruct/     --tokenizer_path Meta-Llama-3-8B-Instruct/tokenizer.model  --root samples --pred_name predict_Meta-Llama-3-8B-Instruct
 ```

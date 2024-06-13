@@ -4,9 +4,8 @@ This repository is the official implementation of DiReCT. It contains the codes 
 ## Data Set
 We are now applying for the permission of releasing our data on PhysioNet. Several samples of annotated data are available in samples folder.
 
-#### Data Loading and Analysis
-
-#### Annotation and Tools
+[Annotation and Tools](https://github.com/wbw520/DiReCT/tree/master/utils/data_annotation)
+[Data Loading and Analysis](https://github.com/wbw520/DiReCT/tree/master/utils/data_loading_analysisi)
 
 ## Implementation of Baseline Experiment
 We show the implementation for LLama3-8B and GPT Azure.

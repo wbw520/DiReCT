@@ -3,7 +3,7 @@ import os
 
 
 def AskChatGPT(input_template, temperature, model_engine):
-    os.environ['OPENAI_API_KEY'] = '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'
+    os.environ['OPENAI_API_KEY'] = 'your keu'
     client = OpenAI(
         # This is the default and can be omitted
         api_key=os.environ.get("OPENAI_API_KEY"),

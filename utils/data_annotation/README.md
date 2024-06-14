@@ -4,5 +4,6 @@ the clinical note and provide the rationale why it causes the disease during dia
 ![Annotation_sample](annotation_sample.png)
 
 Our annotation tool is provided as "annotation tool.exe". We developed it by ourselves and current no license from Microsoft (alert safety information).
+You can read the JSON file in "samples" folder to show the annotation results.
 
 

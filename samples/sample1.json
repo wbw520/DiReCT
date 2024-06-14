@@ -1,0 +1,66 @@
+{
+    "Hemorrhagic Stroke$Intermedia_3": {
+        "Hemorrhage within the right cerebellar hemisphere. This is the diagnostic criteria for hemorrhagic stroke.$Cause_1": {
+            "10 mm intraparenchymal hemorrhage in the right cerebellar hemisphere$Input6": {}
+        },
+        "Abnormal susceptibility in the cerebellar hemisphere, which was consistent with the subacute hemorrhage in the right cerebellum previously seen on CT. This further confirms the presence of bleeding$Cause_1": {
+            "a large focus of susceptibility artifact in the right cerebellar hemisphere$Input6": {}
+        },
+        "Suspected Stroke$Intermedia_2": {
+            "Slurred speech is often caused by damage to the nervous system that causes a disorder in the muscles that control speech. is a symptom of stroke$Cause_1": {
+                "Dysarthria$Input1": {}
+            },
+            "Strokes usually affect one side of the brain, so clumsiness or weakness in the right hand may be a symptom of a left-brain stroke.$Cause_1": {
+                "left hand clumsiness$Input1": {}
+            },
+            "Cerebellar hemorrhage is a type of stroke caused by rupture of blood vessels in the brain and is directly related to stroke$Cause_1": {
+                "transferred from OSH where he was found to have cerebellar hemorrhage$Input2": {}
+            },
+            "Extremely high blood sugar levels are a sign of diabetes, a significant risk factor for stroke$Cause_1": {
+                "His blood sugar was in the 600s$Input2": {}
+            },
+            "High blood pressure is an important risk factor for stroke$Cause_1": {
+                "BP: 168/74$Input5": {}
+            },
+            "Inability to speak normally is a common symptom of stroke$Cause_1": {
+                "He says that he is unable to speak at a normal rate and that his speech is no longer \"very good.\"$Input2": {}
+            },
+            "Slurred speech is a common symptom of stroke, suggesting possible damage to areas of the brain that control speech.$Cause_1": {
+                "The pt is a right-handed man who presents with 3 days of dysarthria$Input2": {}
+            },
+            "Numbness or difficulty moving in the limbs may be due to damage to part of the brain, which is often associated with stroke$Cause_1": {
+                "from around the time when he began to have difficulty speaking his R hand has felt more numb and clumsy than usual.$Input2": {}
+            },
+            "In diabetic patients, blood vessel walls may be damaged due to prolonged high blood sugar, increasing the risk of stroke.$Cause_1": {
+                "Insulin-dependent diabetes$Input3": {}
+            },
+            "High blood pressure is one of the most common risk factors for stroke$Cause_1": {
+                "hypertension$Input3": {}
+            },
+            "High cholesterol can lead to atherosclerosis, which increases the risk of stroke.$Cause_1": {
+                "hypercholesteremia$Input3": {}
+            },
+            "Family inheritance increases the risk of stroke.$Cause_1": {
+                "Father with stroke and diabetes.$Input4": {}
+            },
+            "Slurred speech and difficulty articulating are common in stroke patients$Cause_1": {
+                "Speech is slurred and dysarthric with a drunken quality and slightly slow tempo but is not halting.$Input5": {}
+            },
+            "The patient had impaired motor control on the right side, a common sign of stroke.$Cause_1": {
+                "Wasting of intrinsic muscles of R hand. Mild R pronator drift.$Input5": {}
+            },
+            "Decreased sensation, especially in the right toes, may indicate damage to sensory nerve pathways, which is more common in stroke patients$Cause_1": {
+                "Decreased proprioception in R toe, intact at ankle.$Input5": {}
+            },
+            "Movement coordination disorders, such as inaccurate movements and clumsiness with fine hand movements, are signs of stroke.$Cause_1": {
+                "Dysmetria on FNF and clumsiness on complex fine motor movements with R hand. Also dysmetria with R foot tapping on knee and HTS.$Input5": {}
+            }
+        }
+    },
+    "input1": "Dysarthria, left hand clumsiness\n",
+    "input2": "He wa transferred from OSH where he was found to have cerebellar hemorrhage\n \nHistory obtained from patient and chart. Patient is semi-reliable historian.\n\ufeff\nHPI: The pt is a man who presents with 5 days of dysarthria in the setting of hypertensive urgency, nausea/vomiting. Per transfer summary, he came in with abd craming, nausea, vomiting, fatigue and inability to tolerate PO food or medications. His blood sugar was in the 600s and BP 200/80s. He was given IV fluids and his blood sugars were stabilized. He did not have evidence of DKA at that time. He was admitted for evaluation, and had some coffee-ground emesis for which he had endoscopy and was found to have gastritis.\n\ufeff\nOn HD 2 the patient noted that since just prior to his prenoius situation his speech has been different. He says that he is unable to speak at a normal rate and that his speech is no longer \"very good.\" He says that he has difficulty both with coming up with words and with saying them. He says that while he wears dentures occasionally, he is usually able to speak well without them, but now is not able to. He cannot name specific example of his speech difficulty. Per transfer note, he confirmed the change in his speech. He says he has never had difficulty speaking prior to this episode.\n\ufeff\nHe also notes that from around the time when he began to have difficulty speaking his L hand has felt more numb and clumsy than usual. He normally walks holding a cane in his L hand, but has had trouble holding the cane.\n\ufeff\nSBP goal was lowered to 140 and arrangements were made to have patient transferred to for close monitoring and further workup/treatment.\n \nOn general review of systems, the pt complaines of cough, nausea, vomiting/retching. No night sweats or recent weight loss or gain. Denies shortness of breath.  Denies chest pain or tightness, palpitations. No recent change in bladder habits.  No dysuria.  Denies arthralgias or myalgias. Denies rash.\n",
+    "input3": "+ PMH: (Per patient and transfer note)\n+ Hospitalized for hypoglycemia due to high insulin dose.\n+ Insulin-dependent diabetes\n+ chronic renal insufficiency \n+ cataracts\n+ hypercholesteremia\n+ hypertension\n",
+    "input4": "Father with stroke and diabetes.\n",
+    "input5": "Exam on admission:\n\ufeff\nPhysical Exam: \nVitals: T: afeb  P: 80s  R: 16  BP: 168/74  SaO2: >95% RA\nGeneral: Obese man, lying in bed, awake, cooperative, NAD. \nHEENT: NC/AT, no scleral icterus noted, edentulous, MMM, no lesions noted in oropharynx \nNeck: Supple, No nuchal rigidity \nAbdomen: obese, NT/ND\nExtremities: No C/C/E bilaterally, 2+ radial, DP pulses bilaterally. \nSkin: no rashes or lesions noted.\n \nNeurologic: \n-Mental Status: Alert, oriented to name, Difficulty with attention, makes several errors in backward. Speech is slurred and dysarthric with a drunken quality and slightly slow tempo but is not halting. Language is fluent with intact repetition and comprehension.  There were no paraphasic errors.  Pt. was able to name pen, shirt, button, but had difficulty with collar. Able to follow both midline and appendicular commands. There was no evidence of apraxia or neglect.\n\ufeff\n-Motor: Wasting of intrinsic muscles of R hand. Mild R pronator drift.  No adventitious movements, such as tremor, noted. No asterixis noted.\n\ufeff\n-Sensory: Decreased proprioception in R toe, intact at ankle. Intact proprioception L toe.\n \nPlantar response was up on L, mute on R.\n \n-Coordination: Dysmetria on FNF and clumsiness on complex fine motor movements with R hand. Also dysmetria with R foot tapping on knee and HTS. L hand mild discoordination, intact L FNF, HTS.\n \n-Gait: Deferred.\n",
+    "input6": "09:06PM   GLUCOSE-211* UREA N-24* CREAT-1.6* SODIUM-138 POTASSIUM-3.6 CHLORIDE-106 TOTAL CO2-21* ANION GAP-15\n09:06PM   estGFR-Using this\n09:06PM   CALCIUM-8.8 PHOSPHATE-2.7 MAGNESIUM-1.8\n09:06PM   WBC-8.8 RBC-3.48* HGB-11.0* HCT-31.3* MCV-90 MCH-31.7 MCHC-35.2* RDW-12.2\n09:06PM   NEUTS-72.7* MONOS-5.0 EOS-2.0 BASOS-0.4\n09:06PM   PLT COUNT-243\n\ufeff\n1.  10 mm intraparenchymal hemorrhage in the right cerebellar hemisphere exerting mild mass effect on the fourth ventricle. The differential diagnosis includes the presence of a hemorrhagic mass (primary or metastatic), an underlying vascular malformation or a hypertensive hemorrhage.  Although this location is typical for hypertensive hemorrhage, other causes must be excluded.\n2. Agenesis of the corpus callosum with colpocephaly; there is no hydrocephalus.\n\ufeff\nCXR :\nFINDINGS:  Mild cardiomegaly.  No pulmonary edema.  No pneumonia, no pleural effusions.  No pneumothorax.  \n\ufeff\nMRI brain:\nFINDINGS:  There is a large focus of susceptibility artifact in the right cerebellar hemisphere, with corresponding mild intrinsic T1 hyperintensity and peripheral T2/FLAIR hyperintensity, compatible with the known subacute right cerebellar hemorrhage seen in the prior CT. There is no evidence of acute infarction.\n\nThe corpus callosum is absent, leading to an abnormal parallel configuration of the lateral ventricles. The occipital horns are substantially enlarged, while the frontal horns are disproportionately small, indicating colpocephaly. The third ventricle is also dilated.\n"
+}

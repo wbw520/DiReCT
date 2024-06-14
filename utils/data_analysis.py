@@ -57,7 +57,7 @@ def cal_a_json(root):
 
 
 def deduction_assemble(record_node):
-    # Organize all nodes and return the all deductions as [o,z,d]
+    # Organize all nodes and return the all deductions as {o: [z,r,d]...}
     GT = {}
     for key, value in record_node.items():
         if "Input" not in value['type']:

@@ -5,7 +5,7 @@ Our dataset aims to assess the ability of large language model in aligning with 
 
 ## Data Set
 We are now applying for the permission of releasing our data on PhysioNet. Several samples of annotated data 
-(these samples are perturbed and revised by ourself to confirm not related to the original note) are available in the "samples" folder.
+(they are synthesis data not from MIMIC) are available in the "samples" folder.
 
 [Annotation and Tools](https://github.com/wbw520/DiReCT/tree/master/utils/data_annotation) <br>
 [Data Loading and Analysis](https://github.com/wbw520/DiReCT/tree/master/utils/data_loading_analysisi)

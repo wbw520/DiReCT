@@ -8,5 +8,5 @@ Our annotation tool is provided as "annotation tool.exe". We developed it by our
 You can read the JSON file in "samples" folder to show the annotation results.
 
 ## Diagnostic Knowledge Graph
-The knowledge graph for each disease category is saved as JSON file in "diagnostic" folder. Key of diagnostic represent the diagnostic procedure and key of knowledge records the premise for each diagnosis d.
+The knowledge graph for each disease category is saved as JSON file in "diagnostic_kg" folder. Key of diagnostic represent the diagnostic procedure and key of knowledge records the premise for each diagnosis d.
 

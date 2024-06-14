@@ -13,7 +13,7 @@ domain = {"Cardiology": ["Acute Coronary Syndrome", "Aortic Dissection", "Atrial
 
 def process(root, pred_name):
     all_files_gt = get_all_file_paths(root)
-    all_files_pred_eval = get_all_file_paths(pred_name + "_eval")
+    all_files_pred_eval = get_all_file_paths(pred_name)
     disease_options, flowchart = disease_category()
     record = {}
     for item in disease_options:
@@ -22,9 +22,9 @@ def process(root, pred_name):
     for i in range(len(all_files_gt)):
         print(f"{i}/{len(all_files_gt)}")
         root_file = all_files_gt[i]
-        print(root_file)
         current_disease = root_file.split("/")[1]
-        root_eval = root_file.replace("Finished", pred_name + "_eval")
+        root_eval = root_file.replace(root, pred_name)
+        print(root_eval)
 
         if root_eval not in all_files_pred_eval:
             acc_cat, acc_diag, comp_pre, comp_re, comp_coverage, faith_ob, faith_all = 0, 0, 0, 0, 0, 0, 0

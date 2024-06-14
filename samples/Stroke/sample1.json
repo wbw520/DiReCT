@@ -1,0 +1,72 @@
+{
+    "Hemorrhagic Stroke$Intermedia_3": {
+        "Intracerebral hemorrhage is a direct diagnostic criterion for hemorrhagic stroke$Cause_1": {
+            "have cerebellar hemorrhage$Input2": {}
+        },
+        "There was a 10 mm intraparenchymal hemorrhage in the right cerebellar hemisphere, which caused a mild compression effect on the fourth ventricle. Intraparenchymal hemorrhage is a typical manifestation of hemorrhagic stroke.$Cause_1": {
+            "10 mm intraparenchymal hemorrhage in the right cerebellar hemisphere$Input6": {}
+        },
+        "MRI results showed a large susceptibility artifact in the right cerebellar hemisphere, corresponding to mild hyperintensity on T1-weighted imaging and peripheral hyperintensity on T2/FLAIR, consistent with subacute hemorrhage in the right cerebellar hemisphere seen on previous CT.$Cause_1": {
+            "large focus of susceptibility artifact in the right cerebellar hemisphere, with corresponding mild intrinsic T1 hyperintensity and peripheral T2/FLAIR hyperintensity, compatible with the known subacute right cerebellar hemorrhage seen in the prior CT$Input6": {}
+        },
+        "Suspected Stroke$Intermedia_2": {
+            "Left-handed clumsiness may be caused by damage to one side of the brain, often associated with a stroke$Cause_1": {
+                "Left hand clumsiness$Input1": {}
+            },
+            "Dysarthria is caused by damage to the areas of the brain that control the speech muscles. A stroke can damage these areas, which can affect a person's speech.$Cause_1": {
+                "Dysarthria$Input1": {}
+            },
+            "Slurred speech is often caused by damage to the area of \u200b\u200bthe brain that controls speech muscles, which is common in strokes. High blood pressure is also a significant risk factor for hemorrhagic strokes.$Cause_1": {
+                "5-day history of dysarthria in the context of hypertensive urgency, nausea, and vomiting$Input2": {}
+            },
+            "High blood sugar levels indicate that the patient may have diabetes, a risk factor for stroke$Cause_1": {
+                "blood glucose levels were in the 600s$Input2": {}
+            },
+            "High blood pressure is a risk factor for stroke$Cause_1": {
+                "blood pressure was 200/80s$Input2": {}
+            },
+            "Speech disorders are a common clinical manifestation of stroke$Cause_1": {
+                "unable to speak at a normal rate and that his speech is no longer \"very good.$Input2": {}
+            },
+            "Speech disorders are a common clinical manifestation of stroke.$Cause_1": {
+                "He reports having difficulty both with finding words and with saying them.$Input2": {}
+            },
+            "Numbness and clumsiness in the hands are often related to damage to areas of the brain that control corresponding functions and are common clinical manifestations of stroke.$Cause_1": {
+                "his left hand has felt more numb and clumsy than usual$Input2": {}
+            },
+            "Diabetes is a risk factor for stroke$Cause_1": {
+                "nsulin-dependent diabetes$Input3": {}
+            },
+            "High cholesterol may lead to atherosclerosis, a condition in which the walls of arteries become thinner, which may increase the risk of a cerebral blood vessel rupture, potentially causing a hemorrhagic stroke.$Cause_1": {
+                "hypercholesteremia$Input3": {}
+            },
+            "High blood pressure is the most important risk factor for stroke$Cause_1": {
+                "HTN$Input3": {}
+            },
+            "Family history of stroke is an important factor$Cause_1": {
+                "Mother with stroke.$Input4": {}
+            },
+            "High blood pressure is the most important risk factor for stroke.$Cause_1": {
+                "BP: 168/74$Input5": {}
+            },
+            "Attention deficit disorder may be caused by an impairment in the brain's ability to process information, especially during tasks that require higher cognitive functions, which can be a sign of stroke.$Cause_1": {
+                "Exhibits difficulty with attention and makes several errors when attempting tasks in reverse order.$Input5": {}
+            },
+            "Slurred speech and dysarthria may indicate damage to the area of \u200b\u200bthe brain that controls speech, which is a common symptom of stroke.$Cause_1": {
+                "Speech is slurred and dysarthric, displaying a drunken quality with a slightly slow tempo but without halting.$Input5": {}
+            },
+            "Loss of proprioception in certain areas may indicate damage to neural pathways, a sign of a stroke$Cause_1": {
+                "Decreased proprioception in R toe, intact at ankle$Input5": {}
+            },
+            "Coordination problems may indicate that the cerebellum or other brain areas that control fine motor movements and balance may be affected, a sign of a stroke$Cause_1": {
+                "Dysmetria observed in FFNF test and clumsiness during complex fine motor movements with the right hand$Input5": {}
+            }
+        }
+    },
+    "input1": "Left hand clumsiness, Dysarthria\n",
+    "input2": "He wa transferred from OSH where he was found to have cerebellar hemorrhage. History obtained from patient and chart. Patient is semi-reliable historian.\n\ufeff\nThe patient is a male who presents with a 5-day history of dysarthria in the context of hypertensive urgency, nausea, and vomiting. According to the transfer summary, he initially presented with abdominal cramping, nausea, vomiting, fatigue, and an inability to tolerate oral intake or medications. His blood glucose levels were in the 600s and his blood pressure was 200/80s. He was administered IV fluids, and his blood glucose levels were stabilized. There was no evidence of diabetic ketoacidosis (DKA) at that time. He was admitted for further evaluation and experienced some coffee-ground emesis, for which an endoscopy was performed, revealing gastritis.\n\ufeff\nOn the 2nd hospital day, the patient noted that since just prior to his previous situation, his speech has been different. He says that he is unable to speak at a normal rate and that his speech is no longer \"very good.\" He reports having difficulty both with finding words and with saying them. Although he occasionally wears dentures, he is usually able to speak well without them, but now he cannot. He cannot provide specific examples of his speech difficulty. According to the transfer note, he confirmed the change in his speech. He states that he has never had difficulty speaking prior to this episode. He also notes that around the time his speech difficulty began, his left hand has felt more numb and clumsy than usual. He normally walks using a cane in his left hand but has had trouble holding the cane.\n\n\n\n\n\n\n\n\n",
+    "input3": "+ PMH: (Per patient and transfer note)\n+ Hospitalized for hypoglycemia due to high insulin dose.\n+ Insulin-dependent diabetes\n+ chronic renal insufficiency \n+ cataracts\n+ hypercholesteremia\n+ HTN\n",
+    "input4": "Mother with stroke.\n",
+    "input5": "Vitals: T: afeb  P: 80s  R: 16  BP: 168/74  SaO2: >90% RA\nGeneral: Obese man, lying in bed, cooperative, NAD. \nHEENT: NC/AT, no scleral icterus noted, edentulous, MMM, no lesions noted in oropharynx \nNeck: Supple, No nuchal rigidity \nAbdomen: obese, NT/ND\nExtremities: No C/C/E bilaterally, 2+ radial, DP pulses bilaterally. \nSkin: no rashes or lesions noted.\n \nNeurologic: \nMental Status: Patient is alert and oriented to their name. Exhibits difficulty with attention and makes several errors when attempting tasks in reverse order. Speech is slurred and dysarthric, displaying a drunken quality with a slightly slow tempo but without halting. Language remains fluent with intact repetition and comprehension abilities. No paraphasic errors were observed. The patient could name common objects such as a pen, shirt, and button, but had difficulty naming a collar. The patient was able to follow commands involving both midline and appendicular movements. No evidence of apraxia or neglect was noted.\n\ufeff\n--Motor: Wasting of intrinsic muscles of the right hand. Mild pronator drift in the right arm. No adventitious movements, such as tremor, noted. No asterixis noted.\n\n-Sensory: Decreased proprioception in R toe, intact at ankle. Intact proprioception L toe.\n \nPlantar response was up on L, mute on R.\n \n-Coordination: Dysmetria observed in FFNF test and clumsiness during complex fine motor movements with the right hand. Additionally, dysmetria noted with right foot tapping on the knee and HTS test. The left hand shows mild discoordination but intact FNF and HTS.\n \n-Gait: Deferred.\n",
+    "input6": "10:06PM   CHLORIDE-106 TOTAL CO2-21* ANION GAP-15 GLUCOSE-211* UREA N-24* CREAT-1.6* SODIUM-138 POTASSIUM-3.6\n10:06PM   estGFR-Using this\n10:06PM   CALCIUM-8.8 PHOSPHATE-2.7 MAGNESIUM-1.8\n10:06PM   NEUTS-72.7* MONOS-5.0 EOS-2.0 BASOS-0.4\n10:06PM   PLT COUNT-243\n\ufeff\n1.  10 mm intraparenchymal hemorrhage in the right cerebellar hemisphere exerting mild mass effect on the fourth ventricle. The differential diagnosis includes the presence of a hemorrhagic mass (primary or metastatic), an underlying vascular malformation, or a hypertensive hemorrhage. Although this location is typical for hypertensive hemorrhage, other causes must be ruled out.\n\n\ufeff\nCXR :\nFINDINGS:  Mild cardiomegaly.  No pulmonary edema.  No pneumonia, no pleural effusions.  No pneumothorax.  \n\ufeff\nMRI brain:\nFINDINGS:  There is a large focus of susceptibility artifact in the right cerebellar hemisphere, with corresponding mild intrinsic T1 hyperintensity and peripheral T2/FLAIR hyperintensity, compatible with the known subacute right cerebellar hemorrhage seen in the prior CT. There is no evidence of acute infarction.\n\nThe corpus callosum is absent, leading to an abnormal parallel configuration of the lateral ventricles. The occipital horns are substantially enlarged, while the frontal horns are disproportionately small, indicating colpocephaly. The third ventricle is also dilated.\n"
+}

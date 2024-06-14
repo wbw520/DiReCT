@@ -10,7 +10,7 @@ from utils.data_analysis import disease_category, combine_premise, extract_keys,
 
 
 disease_options, flowchart = disease_category()
-
+os.environ["CUDA_VISIBLE_DEVICES"] = "2"
 
 def main(
     root: str,

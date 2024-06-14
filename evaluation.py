@@ -8,6 +8,8 @@ from utils.data_analysis import cal_a_json, get_all_file_paths
 from llama import Dialog, Llama
 import json
 
+os.environ["CUDA_VISIBLE_DEVICES"] = "2"
+
 
 def main(
     root: str,

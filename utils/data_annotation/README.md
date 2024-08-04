@@ -7,6 +7,9 @@ the clinical note and provide the rationale why it causes the disease during dia
 Our annotation tool is provided as "annotation tool.exe". We developed it by ourselves and current no license from Microsoft (alert safety information).
 You can read the JSON file in "samples" folder to show the annotation results. The detailed annotation guideline is provided in [Annotation Guideline](https://github.com/wbw520/DiReCT/blob/master/utils/data_annotation/annotation%20guideline.pdf)
 
+The statisics of all disease categories are shown as following. # samples shows the number of notes, second to last column shows all diagnosis through the diagnostic process, and the last column show the number of leaf diagnosis.
+![Disease Categories](disease_cat.png)
+
 ## Diagnostic Knowledge Graph
 The knowledge graph for each disease category is saved as JSON file in "diagnostic_kg" folder. Key of "diagnostic" represent the diagnostic procedure and key of "knowledge" records the premises for each diagnosis d. Note that each premise is seperated with ";".
 

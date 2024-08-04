@@ -1,6 +1,22 @@
 # Data Loading and Analysis
 ## Data Structure
-Our data is saved in a JSON file (tree structure) and you can use the [Annotation Tool](https://github.com/wbw520/DiReCT/tree/master/utils/data_annotation) to visualize it.
+We store the annotated JSON files in folders named after the disease categories and PDD. Each JSON file record the annotated diagnostic procedure for a PDD. 
+After unzipping the samples.rar file, the data is formulated as following:
+```
+-samples
+    - Disease Category 1
+          - PDD Category 1
+                 - note_1.json
+                 - note_2.json
+                 - note_3.json
+                 ...
+          - PDD Category 2
+          ...
+    - Disease Category 2
+    - Disease Category 3
+    ...
+```
+A JSON file is with tree structure and you can use the [Annotation Tool](https://github.com/wbw520/DiReCT/tree/master/utils/data_annotation) to visualize it.
 Here we demonstrate the code to load a JSON.
 ```
 from utils.data_analysis import cal_a_json, deduction_assemble

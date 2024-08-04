@@ -30,7 +30,7 @@ A subgraph sample for Heart Failure is shown as following:
          "Symptoms": "Breathlessness; Orthopnoea; Paroxysmal nocturnal dyspnoea; Reduced exercise tolerance; Fatigue; tiredness; increased time to recover after exercise; Ankle swelling; Nocturnal cough; Wheezing; Bloated feeling; Loss of appetite; Confusion (especially in the elderly); Depression; Palpitation; Dizziness; Syncope.; etc.", 
          "Signs": "Elevated jugular venous pressure; Hepatojugular reflux; Third heart sound (gallop rhythm); Laterally displaced apical impulse; Weight gain (>2 kg/week); Weight loss (in advanced HF); Tissue wasting (cachexia); Cardiac murmur; Peripheral edema (ankle, sacral, scrotal); Pulmonary crepitations; Pleural effusion; Tachycardia; Irregular pulse; Tachypnoea; Cheyne-Stokes respiration; Hepatomegaly; Ascites; Cold extremities; Oliguria;  Narrow pulse pressure."}, 
      "Strongly Suspected Heart Failure": "NT-proBNP > 125 pg/mLor BNP > 35 pg/mL\n", 
-     "Heart Failure": "Abnormal findings from echocardiography\uff1aLV mass index ≥ 95 g/m2 (Female), ≥ 115 g/m2 (Male); Relative wall thickness >0.42, LA volume index>34 mL/m2, E/e' ratio at rest >9, PA systolic pressure >35 mmHg; TR velocity at rest >2.8 m/s, etc.", 
+     "Heart Failure": "Abnormal findings from echocardiography:LV mass index ≥ 95 g/m2 (Female), ≥ 115 g/m2 (Male); Relative wall thickness >0.42, LA volume index>34 mL/m2, E/e' ratio at rest >9, PA systolic pressure >35 mmHg; TR velocity at rest >2.8 m/s, etc.", 
      "HFrEF": "LVEF<40%", 
      "HFmrEF": "LVEF41~49%", 
      "HFpEF": "LVEF>50%"}}

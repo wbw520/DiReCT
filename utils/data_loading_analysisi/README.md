@@ -5,7 +5,7 @@ Here we demonstrate the code to load a JSON.
 ```
 from utils.data_analysis import cal_a_json, deduction_assemble
 
-root = "samples/sample1.json"
+root = "samples/Stroke/sample1.json"
 record_node, input_content, chain = cal_a_json(root)
 ```
 record_node: A dictionary for all nodes in our annotation. Each node is also saved as a dictionary where <br>

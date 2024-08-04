@@ -29,7 +29,7 @@ USE_GPT_API(root="samples", use_p=False, api_key="Your key", azure_endpoint="You
 ```
 
 ## Automatic Evaluation
-We use the LLama3-8B for this evaluation. Our prompts refer to utils/dataextraction.py <br>
+We use the LLama3-8B for this evaluation. Our prompts refer to utils/data_extraction.py <br>
 With functions: discriminate_similarity_observation() and  discriminate_similarity_reason()
 #### Evaluation for Completeness and Faithfulness
 An evaluation folder "_eval" will be generated for all prediction. Each prediction has a evaluation results, show the matched observations and rationales.

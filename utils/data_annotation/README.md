@@ -5,7 +5,7 @@ the clinical note and provide the rationale why it causes the disease during dia
 ![Annotation_sample](annotation_sample.png)
 
 Our annotation tool is provided as "annotation tool.exe". We developed it by ourselves and current no license from Microsoft (alert safety information).
-You can read the JSON file in "samples" folder to show the annotation results.
+You can read the JSON file in "samples" folder to show the annotation results. The detailed annotation guideline is provided in "annotation guideline.pdf"
 
 ## Diagnostic Knowledge Graph
 The knowledge graph for each disease category is saved as JSON file in "diagnostic_kg" folder. Key of "diagnostic" represent the diagnostic procedure and key of "knowledge" records the premises for each diagnosis d. Note that each premise is seperated with ";".

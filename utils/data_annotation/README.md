@@ -12,7 +12,8 @@ The statisics of all disease categories are shown as following. # samples shows 
 <img src="disease_cat.png" alt="Disease Categories" width="400"/>
 
 ## Diagnostic Knowledge Graph
-The knowledge graph for each disease category is saved as JSON file in "diagnostic_kg" folder. Key of "diagnostic" represent the diagnostic procedure and key of "knowledge" records the premises for each diagnosis d. Note that each premise is seperated with ";".
+The knowledge graph for each disease category is saved as JSON file in "diagnostic_kg" folder. 
+Key of "diagnostic" represent the diagnostic procedure (in a tree structure), from a d of suspected a disease to the final diagnosis. Key of "knowledge" records the premises for each diagnosis d. Note that each premise is seperated with ";".
 
 A subgraph sample for Heart Failure is shown as following:
 ```

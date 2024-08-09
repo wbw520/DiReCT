@@ -44,3 +44,14 @@ from statistics import process
 
 process(root="samples", pred_name="predict_Meta-Llama-3-8B-Instruct_eval")
 ```
+## Publication
+
+If you want to use this work, please consider citing the following paper.
+```
+@article{wang2024direct,
+ title = {DiReCT: Diagnostic Reasoning for Clinical Notes via Large Language Models},
+ author = {Bowen Wang and Jiuyang Chang and Yiming Qian and Guoxin Chen and Junhao Chen and Zhouqiang Jiang and Jiahao Zhang and Yuta Nakashima and Hajime Nagahara},
+ journal={arXiv preprint arXiv:2408.01933},
+ year = {2024}
+}
+```

@@ -16,7 +16,7 @@ After unzipping the samples.rar file, the data is formulated as following:
     - Disease Category 3
     ...
 ```
-For reading a JSON file, you can use the [Annotation Tool](https://github.com/wbw520/DiReCT/tree/master/utils/data_annotation) to visualize it.
+We also provided a data list for detailed structure information. For reading a JSON file, you can use the [Annotation Tool](https://github.com/wbw520/DiReCT/tree/master/utils/data_annotation) to visualize it.
 Here we also demonstrate the code to load a JSON. It will process an annotated JSON file and reconstructed it with a tree structure. 
 ```
 from utils.data_analysis import cal_a_json, deduction_assemble

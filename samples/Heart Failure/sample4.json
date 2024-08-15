@@ -1,0 +1,49 @@
+{
+    "HFpEF$Intermedia_5": {
+        "LVEF\u226550% is the critiera for HFpEF$Cause_1": {
+            "LVEF>55%$Input6": {}
+        },
+        "Heart Failure$Intermedia_4": {
+            "Cardiac structural abnormalities is a diagnostic criteria of heart failure$Cause_1": {
+                "The left atrium is mildly dilated$Input6": {}
+            },
+            "Cardiac diastolic dysfunction is a diagnostic criteria of heart failure$Cause_1": {
+                "Tissue Doppler imaging suggests an increased left ventricular filling pressure (PCWP>18mmHg)$Input6": {}
+            },
+            "Strongly suspected heart failure$Intermedia_3": {
+                "BNP \u2265 35 pg/mL is a strong value for heart failure$Cause_1": {
+                    "proBNP-3843$Input6": {}
+                },
+                "Suspected heart failure$Intermedia_2": {
+                    "Breathlessness is a symptom of heart failure$Cause_1": {
+                        "In the past few days, she says that she has become increasingly short of breath.$Input2": {}
+                    },
+                    "Valve disease is a risk factor of heart failure$Cause_1": {
+                        "aortic stenosis$Input3": {}
+                    },
+                    "Hypertension is a risk factor of heart failure$Cause_1": {
+                        "hypertension$Input3": {}
+                    },
+                    "Metabolic disease is a risk factor of heart failure$Cause_1": {
+                        "hypothyroidism$Input3": {}
+                    },
+                    "Pulmonary crepitations is a sign of heart failure$Cause_1": {
+                        "Breath sounds dulled at bases; crackles bilaterally midway up lungs.$Input5": {}
+                    },
+                    "Valve disease is a risk factor of heart failure #$Cause_1": {
+                        "The patient with a history of aortic stenosis s/p porcine valve replacement$Input2": {}
+                    },
+                    "Congestion showed in chest X-ray is related to heart failure$Cause_1": {
+                        "New mild-to-moderate interstitial abnormality, most suggestive of congestive heart failure.\"$Input6": {}
+                    }
+                }
+            }
+        }
+    },
+    "input1": "None\n",
+    "input2": "The patient with a history of aortic stenosis s/p porcine valve replacement.  \nShe stated that this fatigue has been increasing over the past two weeks.  In the past few days, she says that she has become increasingly short of breath. According to the chart, she experienced chest pain during her visit to her primary care physician (PCP). However, when asked about it today, she mentioned that the pain was related to her cough. She described the pain as a substernal soreness and noted that she has recently started coughing up blood-tinged sputum. (She typically has a productive cough due to her asthma.) Earlier today, she was sent to the emergency department after her oxygen saturation levels dropped at her PCP's office. She denied experiencing syncope, lightheadedness, or palpitations. At baseline, she has two-pillow orthopnea but no history of paroxysmal nocturnal dyspnea (PND). Additionally, she reports recent nausea but denies any abdominal pain, vomiting, or diarrhea.\n",
+    "input3": "1. CARDIAC RISK FACTORS: Dyslipidemia, Hypertension  \n2. CARDIAC HISTORY:  \n-Surgery: aortic stenosis s/p porcine valve replacement  \n\n3. OTHER PAST MEDICAL HISTORY:  \ndysfunctional uterine bleeding\nallergic rhinitis\nanxiety\naortic stenosis\nasthma\ncarotid stenosis\nessential thrombocythemia\nhyperlipidemia\nhypertension\nhypothyroidism\nMeniere's disease\nosteoarthritis\nosteoporosis\nphlebitis\nrosacea\n",
+    "input4": "None\n",
+    "input5": "Admission:\nVS- 99 136/50 77 20 96% 2L 65.6 kg \nGENERAL- WDWN lying in bed in NAD. Oriented x3. Mood, affect appropriate.  \nHEENT- NCAT. Sclera anicteric. PERRL, EOMI NECK- Supple with JVP of 10 cm.  \nCARDIAC- PMI located in intercostal space, midclavicular line. RR, normal S1, S2 with distinct systolic murmur audible at all points anteriorly.  \nLUNGS- Midline scar present. Resp were unlabored, no accessory muscle use. Breath sounds dulled at bases; crackles bilaterally midway up lungs.  \nABDOMEN- Soft, NTND. No HSM or tenderness.   \nEXTREMITIES- No c/c/e.  \nSKIN- L shin warm and slightly red; R shin discolored with bruise  \nPULSES- Carotid 2+ DP 2+ ___ 2+ \n\n",
+    "input6": "Admission:\n___ 11:30AM BLOOD WBC-7.3 RBC-3.27* Hgb-11.4* Hct-33.8* \nMCV-104* MCH-35.0* MCHC-33.8 RDW-16.9* \n___ 11:30AM BLOOD Neuts-78.9* Lymphs-9.9* Monos-7.2 Eos-0.8 \nBaso-0.4\n___ 11:30AM BLOOD PTT-35.4 \n___ 11:30AM BLOOD Glucose-141* UreaN-24* Creat-0.8 Na-140 \nK-4.4 Cl-100 HCO3-27 AnGap-17\n___ 11:30AM BLOOD proBNP-3843*\n___ 11:30AM BLOOD cTropnT-<0.01\n___ 11:30AM BLOOD Calcium-8.5 Phos-3.1 Mg-2.0\n___ 11:38AM BLOOD Lactate-1.1\n\n\nStudies:\n- CXR: \"New mild-to-moderate interstitial abnormality, most suggestive of congestive heart failure.\"\n\n- UNITLAT LOW EXT VEINS: \"No evidence of deep vein thrombosis.\"\n\n- ECG 11:21:06 AM \"Sinus arrhythmia. Left atrial abnormality. Possible prior anteroseptal myocardial infarction. \nBorderline left ventricular hypertrophy with associated ST segment changes. Compared to the previous tracing of the ventricular rate is faster and atrial ectopy is no longer appreciated\"\n\n- TTE: \"The left atrium is mildly dilated. No atrial septal defect is seen by 2D or color Doppler. The estimated right atrial pressure is 120 mmHg. There is moderate symmetric left ventricular hypertrophy. The left ventricular cavity size is normal. Regional left ventricular wall motion is normal. Overall left ventricular systolic function is normal (LVEF>55%). Tissue Doppler imaging suggests an increased left ventricular filling pressure (PCWP>18mmHg). There is a mild resting left ventricular outflow tract obstruction. Right ventricular chamber size and free wall motion are normal. The diameters of aorta at the sinus, ascending and arch levels are normal. A bioprosthetic aortic valve prosthesis is present. The prosthetic aortic valve leaflets appear normal The transaortic gradient is higher than expected for this type of prosthesis. Trace aortic regurgitation is seen. The mitral valve leaflets are mildly thickened. Mild (1+) mitral regurgitation is seen. [Due to acoustic shadowing, the severity of mitral regurgitation may be significantly UNDERestimated.] Moderate [2+] tricuspid regurgitation is seen. The estimated pulmonary artery systolic pressure is normal. There is no pericardial effusion. \n"
+}

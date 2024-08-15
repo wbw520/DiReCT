@@ -21,7 +21,7 @@ Here we also demonstrate the code to load a JSON. It will process an annotated J
 ```
 from utils.data_analysis import cal_a_json, deduction_assemble
 
-root = "samples/Stroke/sample1.json"
+root = "samples/Stroke/Hemorrhagic Stroke/sample1.json"
 record_node, input_content, chain = cal_a_json(root)
 ```
 record_node: A dictionary for all nodes in our annotation with node index as key. Each node is also saved as a dictionary where <br>

@@ -1,0 +1,41 @@
+{
+    "Bacterial Pneumonia$Intermedia_4": {
+        "Sputum culture results showed multiple microorganisms consistent with Streptococcus pneumoniae, directly indicating Streptococcus pneumoniae infection.$Cause_1": {
+            "Multiple organisms consistent with Streptococcus pneumoniae.$Input6": {}
+        },
+        "Pneumonia$Intermedia_3": {
+            "This is a typical radiological finding of pneumonia$Cause_1": {
+                "Right lower lobe showing infiltrates.$Input6": {}
+            },
+            "Suspected Pneumonia$Intermedia_2": {
+                "Cough with yellow sputum may indicate a bacterial infection, often with pneumonia$Cause_1": {
+                    "cough producing thick yellow sputum$Input2": {}
+                },
+                "Misdiagnosis of viral infection in the early stage, but ineffective treatment may delay the diagnosis of bacterial pneumonia$Cause_1": {
+                    "diagnosed with a viral syndrome, receiving guaifenesin, Cepacol, and loratadine for symptom relief. Despite this treatment, his symptoms persisted$Input2": {}
+                },
+                "Headache accompanied by fever may be a systemic reaction caused by infection$Cause_1": {
+                    "intermittent headaches associated with the fever$Input2": {}
+                },
+                "Fever and cough are common symptoms of pneumonia$Cause_1": {
+                    "fevers concurrent with the cough$Input2": {}
+                },
+                "Chest pain in pneumonia may be due to pleurisy caused by lung infection$Cause_1": {
+                    "chest pain that intensified with the fevers$Input2": {}
+                },
+                "If family members have similar symptoms, it may indicate that the source of infection comes from the family environment. Pneumonia is contagious.$Cause_1": {
+                    "his daughter, and other household members, including his wife and grandchildren, have experienced similar symptoms.$Input2": {}
+                },
+                "Diffuse rales and a murmur in the right lower lung may indicate infection or inflammation of the lungs and are typical symptoms of pneumonia.$Cause_1": {
+                    "Diffuse rhonchi, squeaks noted in the right lower lung.$Input5": {}
+                }
+            }
+        }
+    },
+    "input1": "None\n",
+    "input2": "The patient presents with a cough producing thick yellow sputum and has not experienced rhinorrhea, sore throat, or post-nasal drip. One week prior, he visited his primary care physician and was diagnosed with a viral syndrome, receiving guaifenesin, Cepacol, and loratadine for symptom relief. Despite this treatment, his symptoms persisted, and five days ago, he began experiencing fevers concurrent with the cough. He sought care at the emergency department, where a chest X-ray showed no abnormalities, and he was discharged with a prescription for levofloxacin. At home, his fevers escalated to 103 degrees Fahrenheit, and he developed chest pain that intensified with the fevers, prompting a return to the emergency department for further assessment. The chest pain, centered beneath the sternum, occurs only during febrile episodes and reaches a significant intensity. There is no associated arm pain or sensations of numbness or tingling.\n\nThis presentation does not align with his typical anginal pain. During his emergency department visit, he was fever-free, appeared clinically stable, and maintained normal oxygen levels on room air. He was admitted to the general medicine ward for continued management.\n\nAdditionally, he reports nausea accompanying his high fevers but no vomiting or diarrhea. He experiences back pain but no muscle aches or rashes. He also reports intermittent headaches associated with the fever. There are no symptoms of sneezing, rhinorrhea, sore throat, or lymph node enlargement.\n\nIt is noteworthy that the patient, his daughter, and other household members, including his wife and grandchildren, have experienced similar symptoms.\n\nReview of systems was unremarkable except as detailed in the history of present illness.\n",
+    "input3": "Hypertension\nHyperlipidemia\n",
+    "input4": "Father with a history of bladder cancer.\n",
+    "input5": "Vital Signs: Heart rate 96, blood pressure 140/78, respiratory rate 20, oxygen saturation 96% on room air, no chest pain reported.\nGeneral: No acute distress, alert and oriented times three.\nHead, Eyes, Ears, Nose, and Throat: Pupils equal, round, reactive to light; extraocular movements intact; moist mucous membranes; sclerae are not yellow; no redness.\nNeck: No lymphadenopathy, no jugular venous distention.\nCardiovascular: Regular rate and rhythm, normal heart sounds with no murmurs detected.\nRespiratory: Diffuse rhonchi, squeaks noted in the right lower lung.\nAbdomen: Active bowel sounds, abdomen is soft, non-tender, and not distended.\nExtremities: No swelling, dorsalis pedis pulses are strong.\nNeurological: Pupils equal, round, reactive to light; extraocular movements intact; facial symmetry with no tongue deviation.\nSkin: Warm and moist, no rashes or ulcerations.\nPsychiatric: Behavior is appropriate, demeanor is pleasant, not displaying anxiety.\n",
+    "input6": "___ 10:20PM   WBC-5.0 RBC-4.07* HGB-11.6* HCT-33.5* MCV-82 \nMCH-28.5 MCHC-34.6 RDW-13.3\n___ 10:20PM   NEUTS-70.0 ___ MONOS-7.0 EOS-3.1 \nBASOS-0.5\n___ 10:20PM   PLT COUNT-189\n___ 10:20PM   GLUCOSE-78 UREA N-29* CREAT-2.0* SODIUM-137 \nPOTASSIUM-3.7 CHLORIDE-102 TOTAL CO2-26 ANION GAP-13\n___ 10:20PM   ___ PTT-26.5 ___\n___ 10:34PM   GLUCOSE-75 LACTATE-1.0\n___ 09:10AM BLOOD WBC-5.3 RBC-4.70 Hgb-13.1* Hct-40.5 \nMCV-86 MCH-27.8 MCHC-32.2 RDW-13.7 Plt ___\n___ 09:10AM BLOOD Glucose-85 UreaN-25* Creat-2.0* Na-140 \nK-3.9 Cl-103 HCO3-28 AnGap-13\n\nCHEST (PA & LAT) Study Date of ___  \nIMPRESSION: Left lower lobe tubular opacities, suggestive of bronchial impaction. Right lower lobe showing infiltrates.\n\nCXR ___: TECHNIQUE: PA AND LATERAL CHEST RADIOGRAPH: \nCardiac, mediastinal and hilar contours are within normal limits. Retrocardiac opacification may represent atelectasis, however, underlying infectious process cannot be completely \nexcluded. No pleural effusions or pneumothorax. \n\nEKG:  LBBB.  No acute ischemic changes from prior.\n\n\nMultiple organisms consistent with Streptococcus pneumoniae.\n\n"
+}

@@ -1,0 +1,35 @@
+{
+    "Bacterial Pneumonia$Intermedia_4": {
+        "Sputum culture results showed multiple microorganisms consistent with Streptococcus pneumoniae, directly indicating Streptococcus pneumoniae infection.$Cause_1": {
+            "ltiple organisms consistent with Streptococcus pneumoniae.$Input6": {}
+        },
+        "Pneumonia$Intermedia_3": {
+            "Lung opacities are abnormal shadows visible on X-rays and are often associated with lung infections such as pneumonia.$Cause_1": {
+                "Chest X-ray indicated stable lower left lobe opacities$Input2": {}
+            },
+            "Suspected Pneumonia$Intermedia_2": {
+                "A nonproductive cough is a common symptom of pneumonia and a persistent worsening may indicate a worsening of the disease.$Cause_1": {
+                    "nonproductive cough that progressively worsened$Input2": {}
+                },
+                "Pleural pain may be caused by lung inflammation and is one of the typical symptoms of pneumonia$Cause_1": {
+                    "pleuritic pain in the epigastric and back areas$Input2": {}
+                },
+                "Fever and chills are the body's immune response to infection and are common clinical manifestations of pneumonia.$Cause_1": {
+                    "fevers and chills$Input2": {}
+                },
+                "High fever is a common symptom of pneumonia and indicates possible infection$Cause_1": {
+                    "102.5 \u00b0F$Input2": {}
+                },
+                "Rales are a sign of secretions in the lungs and are common in patients with pneumonia.$Cause_1": {
+                    "diffuse rhonchi$Input2": {}
+                }
+            }
+        }
+    },
+    "input1": "N/A\n",
+    "input2": "On a recent date, he developed a nonproductive cough that progressively worsened. He denies any shortness of breath. He experienced significant weakness on another date. He was diagnosed with pneumonia in the Emergency Department (ED) yesterday and was prescribed a z-pack but reported no improvement. Subsequently, he developed pleuritic pain in the epigastric and back areas. He reported no chest pain or palpitations but did have fevers and chills. He occasionally experienced slight headaches. He received his flu shot this year and has had no exposure to sick individuals.\n\nDuring his visit to the ED, his initial vital signs were: temperature 102.5 \u00b0F, heart rate 16 beats per minute, oxygen saturation 93%. His physical examination revealed diffuse rhonchi. Lab tests showed a creatinine level of 2.0. Chest X-ray indicated stable lower left lobe opacities. He was treated with ceftriaxone, nebulizers, and Tylenol.\n\nReview of Systems:\nPositive per history of present illness.\nNegative for fever, chills; sinus tenderness, rhinorrhea, or congestion; chest pain or tightness, palpitations; nausea, vomiting, diarrhea, constipation, or abdominal pain; dysuria, urinary frequency; joint or muscle pain; and rashes. All other systems reviewed were negative.\n",
+    "input3": "1. DM2\n2. HTN\n3. Hyperlipidemia\n4. Rotator cuff repair\n",
+    "input4": "Mother died at age ___ of stomach cancer.\n",
+    "input5": "General: Elderly woman, awake and alert, no acute distress.\nHead, Eyes, Ears, Nose, Throat: Extraocular movements intact, sclerae not jaundiced, conjunctivae clear, oral pharynx moist without lesions.\nNeck: Supple, no jugular venous distension.\nCardiovascular: Regular rate, normal first and second heart sounds, no murmurs, rubs, or gallops.\nRespiratory: Breathing unlabored, no use of accessory muscles, clear to auscultation bilaterally, no crackles, wheezes, or rhonchi.\nAbdominal: Soft, non-tender, non-distended, no hepatosplenomegaly, bowel sounds present.\nMusculoskeletal: Normal muscle tone and bulk.\nExtremities: No cyanosis, clubbing, or edema, 2+ pulses bilaterally.\nSkin: No rash, skin is warm.\nNeurological: Oriented to person, place, and time, normal attention, cranial nerves II through XII intact, normal strength throughout, sensory intact.\n",
+    "input6": "___ 11:59AM BLOOD WBC-8.6 RBC-3.73* Hgb-12.0 Hct-33.8* \nMCV-91 MCH-32.1* MCHC-35.4* RDW-12.9 Plt ___\n___ 05:52AM BLOOD WBC-7.5 RBC-3.78* Hgb-11.9* Hct-34.3* \nMCV-91 MCH-31.4 MCHC-34.6 RDW-12.6 Plt ___\n___ 12:45AM BLOOD WBC-7.7 RBC-3.59* Hgb-11.6* Hct-32.4* \nMCV-90 MCH-32.3* MCHC-35.8* RDW-12.5 Plt ___\n___ 06:00AM BLOOD WBC-5.7 RBC-3.67* Hgb-11.5* Hct-33.1* \nMCV-90 MCH-31.3 MCHC-34.7 RDW-12.7 Plt ___\n___ 11:59AM BLOOD Neuts-63.2 ___ Monos-6.1 Eos-3.0 \nBaso-0.6\n___ 12:45AM BLOOD Neuts-65.7 ___ Monos-7.6 Eos-2.7 \nBaso-0.5\n\nMultiple organisms consistent with Streptococcus pneumoniae.\n\n"
+}

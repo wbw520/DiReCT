@@ -7,8 +7,8 @@ Our dataset aims to assess the ability of large language model in aligning with 
 We are now applying for the permission of releasing our data on PhysioNet. Several samples of annotated data 
 (they are synthesis data not from MIMIC) are available in the "samples" folder.
 
-[Annotation and Tools](https://github.com/wbw520/DiReCT/tree/master/utils/data_annotation) <br>
-[Data Loading and Analysis](https://github.com/wbw520/DiReCT/tree/master/utils/data_loading_analysisi)
+Data annotation and structure refer to [Annotation and Tools](https://github.com/wbw520/DiReCT/tree/master/utils/data_annotation) <br>
+Data list and loading refer to [Data Loading and Analysis](https://github.com/wbw520/DiReCT/tree/master/utils/data_loading_analysisi)
 
 ## Implementation of Baseline Experiment
 We show the implementation for LLama3-8B and GPT Azure.

@@ -4,7 +4,7 @@ Our dataset aims to assess the ability of large language model in aligning with 
 ![Diagnostic Procedure](imgs/imgs.png)
 
 ## Data Set
-Our dataset is now avalbale at [PhysioNet](https://doi.org/10.13026/yf96-kc87) . Several samples of annotated data 
+Our dataset is now available at [PhysioNet](https://doi.org/10.13026/yf96-kc87) . Several samples of annotated data 
 (they are synthesis data not from MIMIC) are available in the "samples" folder.
 
 Data annotation and structure refer to [Annotation and Tools](https://github.com/wbw520/DiReCT/tree/master/utils/data_annotation) <br>

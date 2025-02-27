@@ -53,7 +53,7 @@ If you want to use this work, please consider citing the following paper.
  booktitle = {Advances in Neural Information Processing Systems},
  pages = {74999--75011},
  title = {DiReCT: Diagnostic Reasoning for Clinical Notes via Large Language Models},
- volume = {37},
+ volume = {38},
  year = {2024}
 }
 ```
